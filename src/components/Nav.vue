@@ -1,19 +1,19 @@
 <template>
   <nav class="nav">
     <router-link class="nav__link" active-class="nav__link--active" to="/"
-      ><PersonIcon class="nav__icon"
+      ><PersonIcon title="About Me" :size="iconSize" class="nav__icon"
     /></router-link>
     <router-link
       class="nav__link"
       active-class="nav__link--active"
       to="/development"
-      ><CodeIcon class="nav__icon"
+      ><CodeIcon title="My Work" :size="iconSize" class="nav__icon"
     /></router-link>
     <router-link
       class="nav__link"
       active-class="nav__link--active"
       to="/contact"
-      ><MailIcon class="nav__icon"
+      ><MailIcon title="Contact Me" :size="iconSize" class="nav__icon"
     /></router-link>
   </nav>
 </template>
@@ -25,10 +25,17 @@ import MailIcon from "vue-material-design-icons/Email.vue";
 
 export default {
   name: "Nav",
+
   components: {
     PersonIcon,
     CodeIcon,
     MailIcon,
+  },
+
+  data: () => {
+    return {
+      iconSize: 40,
+    };
   },
 };
 </script>
