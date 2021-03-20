@@ -1,0 +1,13 @@
+@import "./variables.scss";
+
+@mixin tablet {
+  @media (min-width: $tabletBreakpoint) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $desktopBreakpoint) {
+    @content;
+  }
+}

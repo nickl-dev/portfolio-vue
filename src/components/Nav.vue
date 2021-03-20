@@ -41,15 +41,18 @@ export default {
 </script>
 
 <style lang="scss">
+@import "@/styles/variables.scss";
+
 .nav {
   height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 3px 3px -2px rgba($stockBlack, 0.3);
 
   &__icon {
     margin: 0 20px;
-    color: #323232;
+    color: $stockBlack;
   }
 }
 </style>
