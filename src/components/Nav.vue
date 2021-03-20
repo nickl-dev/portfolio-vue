@@ -1,19 +1,19 @@
 <template>
   <nav class="nav">
-    <router-link class="nav__link" active-class="nav__link--active" to="/"
-      ><PersonIcon title="About Me" :size="iconSize" class="nav__icon"
+    <router-link class="nav__link" active-class="nav__link--active" exact to="/"
+      ><PersonIcon title="About Me" :size="iconSize"
     /></router-link>
     <router-link
       class="nav__link"
       active-class="nav__link--active"
       to="/development"
-      ><CodeIcon title="My Work" :size="iconSize" class="nav__icon"
+      ><CodeIcon title="My Work" :size="iconSize"
     /></router-link>
     <router-link
       class="nav__link"
       active-class="nav__link--active"
       to="/contact"
-      ><MailIcon title="Contact Me" :size="iconSize" class="nav__icon"
+      ><MailIcon title="Contact Me" :size="iconSize"
     /></router-link>
   </nav>
 </template>
@@ -50,9 +50,17 @@ export default {
   align-items: center;
   box-shadow: 0 3px 3px -2px rgba($stockBlack, 0.3);
 
-  &__icon {
+  &__link {
     margin: 0 20px;
     color: $stockBlack;
+    outline: none;
+    transition: 0.1s ease-in-out;
+    &:hover {
+      box-shadow: 0 3px 2px -2px rgba($stockBlack, 1);
+    }
+    &--active {
+      box-shadow: 0 3px 2px -2px rgba($stockBlack, 0.5);
+    }
   }
 }
 </style>
