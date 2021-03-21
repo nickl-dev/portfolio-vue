@@ -11,3 +11,25 @@
     @content;
   }
 }
+
+@mixin name {
+  font-size: 40px;
+  @include tablet {
+    font-size: 70px;
+  }
+  @include desktop {
+    font-size: 100px;
+  }
+}
+
+@mixin occupation {
+  font-size: 20px;
+  margin: 20px 0;
+  display: inline-block;
+  @include tablet {
+    font-size: 30px;
+  }
+  @include desktop {
+    font-size: 35px;
+  }
+}
