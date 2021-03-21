@@ -8,6 +8,10 @@
         :repeat="0"
       ></vue-typer>
     </header>
+    <div class="about__current">
+      <h2 class="about__job">Currently: Front End Developer @</h2>
+      <img class="about__employer" :src="cd" />
+    </div>
     <section class="about__wrapper">
       <div class="about__subwrapper">
         <img :src="headshot" alt="Nick Lal" class="about__image" />
@@ -19,8 +23,10 @@
             debugging and finding new ways to solve new problems. I use my
             skills to work with a great team on great projects while learning
             something new every day.
-            <a :href="resume" class="about__resume" target="_blank">Resume</a>
           </p>
+          <a href="https://www.google.ca" class="about__resume" target="_blank"
+            >Resume</a
+          >
         </div>
       </div>
     </section>
@@ -30,6 +36,7 @@
 <script>
 import { VueTyper } from "vue-typer";
 import headshot from "@/assets/headshot.jpg";
+import cd from "@/assets/cd-logo.jpg";
 
 export default {
   name: "About",
@@ -41,7 +48,7 @@ export default {
   data: () => {
     return {
       headshot: headshot,
-      resume: require("../../public/nick-lal-webdev-resume.pdf"),
+      cd: cd,
     };
   },
 };
@@ -52,8 +59,8 @@ export default {
 
 .about {
   &__header {
-    margin: 30vh 0;
-    text-align: center;
+    margin: 35vh 0;
+    @include centerText;
   }
   &__name {
     @include name;
@@ -61,11 +68,20 @@ export default {
   &__occupation {
     @include occupation;
   }
+  &__current {
+    @include centerText;
+    margin: 50vh 0;
+  }
+  &__employer {
+    width: 50%;
+    max-width: 400px;
+  }
   &__wrapper {
     background: $stockBlack;
     padding: 50px 5%;
     @include tablet {
       padding: 75px 10%;
+      margin-bottom: 20vh;
     }
     @include desktop {
       padding: 100px 13%;
@@ -86,8 +102,15 @@ export default {
     border-radius: 5px;
   }
   &__bio {
-    margin: 30px 0;
     @include bio;
+  }
+  &__resume {
+    font-size: 20px;
+    display: inline-block;
+    @include button;
+    &:hover {
+      @include invertToWhite;
+    }
   }
 }
 </style>

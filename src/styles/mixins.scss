@@ -37,6 +37,7 @@
 @mixin bio {
   color: $stockWhite;
   font-size: 20px;
+  margin: 20px 0;
   @include tablet {
     font-size: 22px;
     line-height: 32px;
@@ -44,4 +45,24 @@
   @include desktop {
     font-size: 20px;
   }
+}
+
+@mixin centerText {
+  text-align: center;
+}
+
+@mixin button {
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-weight: 600;
+  color: $stockWhite;
+  border: 1px solid $stockWhite;
+  transition: 0.1s ease-in-out;
+  font-size: 20px;
+}
+
+@mixin invertToWhite {
+  border: $stockWhite;
+  background: $stockWhite;
+  color: $stockBlack;
 }
