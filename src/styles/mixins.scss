@@ -34,16 +34,29 @@
   }
 }
 
-@mixin bio {
-  color: $stockWhite;
-  font-size: 20px;
-  margin: 20px 0;
+@mixin headshot {
+  width: 260px;
+  border-radius: 5px;
   @include tablet {
-    font-size: 22px;
-    line-height: 32px;
+    width: 280px;
   }
   @include desktop {
-    font-size: 20px;
+    width: 300px;
+  }
+}
+
+@mixin bio {
+  color: $stockWhite;
+  font-size: 18px;
+  margin: 20px auto;
+  max-width: 550px;
+  @include tablet {
+    max-width: 620px;
+    padding: 0 5%;
+  }
+  @include desktop {
+    max-width: none;
+    line-height: 30px;
   }
 }
 

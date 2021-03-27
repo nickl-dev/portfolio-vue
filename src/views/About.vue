@@ -15,7 +15,7 @@
     <section class="about__wrapper">
       <div class="about__subwrapper">
         <img :src="headshot" alt="Nick Lal" class="about__image" />
-        <div>
+        <div class="about__biowrapper">
           <p class="about__bio">
             I love creating things that are visually and functionally smooth.
             Front End Development is where I thrive - especially working with
@@ -80,7 +80,7 @@ export default {
     background: $stockBlack;
     padding: 50px 5%;
     @include tablet {
-      padding: 75px 10%;
+      padding: 75px 5%;
       margin-bottom: 20vh;
     }
     @include desktop {
@@ -91,15 +91,17 @@ export default {
     text-align: center;
     @include tablet {
       display: flex;
-      justify-content: center;
+      justify-content: space-evenly;
       align-items: center;
     }
   }
+  &__biowrapper {
+    @include desktop {
+      width: 700px;
+    }
+  }
   &__image {
-    width: 90%;
-    max-width: 300px;
-    margin: 0 auto;
-    border-radius: 5px;
+    @include headshot;
   }
   &__bio {
     @include bio;
