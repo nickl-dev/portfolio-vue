@@ -59,8 +59,8 @@ export default {
 
 .about {
   &__header {
+    @include textCenter;
     margin: 35vh 0;
-    @include centerText;
   }
   &__name {
     @include name;
@@ -69,7 +69,7 @@ export default {
     @include occupation;
   }
   &__current {
-    @include centerText;
+    @include textCenter;
     margin: 50vh 0;
   }
   &__employer {
@@ -88,16 +88,17 @@ export default {
     }
   }
   &__subwrapper {
-    text-align: center;
+    @include textCenter;
     @include tablet {
-      display: flex;
+      @include flexCenter;
       justify-content: space-evenly;
-      align-items: center;
     }
   }
   &__biowrapper {
-    @include desktop {
-      width: 700px;
+    max-width: 550px;
+    margin: auto;
+    @include tablet {
+      width: 50%;
     }
   }
   &__image {
@@ -107,9 +108,9 @@ export default {
     @include bio;
   }
   &__resume {
+    @include button;
     font-size: 20px;
     display: inline-block;
-    @include button;
     &:hover {
       @include invertToWhite;
     }

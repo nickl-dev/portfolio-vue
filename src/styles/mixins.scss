@@ -49,19 +49,22 @@
   color: $stockWhite;
   font-size: 18px;
   margin: 20px auto;
-  max-width: 550px;
-  @include tablet {
-    max-width: 620px;
-    padding: 0 5%;
-  }
-  @include desktop {
-    max-width: none;
-    line-height: 30px;
-  }
 }
 
-@mixin centerText {
+@mixin textCenter {
   text-align: center;
+}
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin iconLink {
+  color: $stockBlack;
+  outline: none;
+  transition: 0.1s ease-in-out;
 }
 
 @mixin button {

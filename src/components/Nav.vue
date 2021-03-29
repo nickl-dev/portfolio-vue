@@ -41,7 +41,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import "@/styles/variables.scss";
+@import "@/styles/mixins.scss";
 
 .nav {
   height: 70px;
@@ -51,9 +51,8 @@ export default {
   box-shadow: 0 3px 3px -2px rgba($stockBlack, 0.3);
 
   &__link {
+    @include iconLink;
     margin: 0 20px;
-    color: $stockBlack;
-    outline: none;
     transition: 0.1s ease-in-out;
     &:hover {
       box-shadow: 0 3px 2px -2px rgba($stockBlack, 1);
