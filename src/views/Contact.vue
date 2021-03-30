@@ -6,10 +6,10 @@
     </p>
     <div class="contact__links">
       <a :href="linkedin" class="contact__link">
-        <LinkedInIcon class="contact__icon" :size="iconSize" />
+        <LinkedInIcon :size="iconSize" />
       </a>
       <a :href="github" class="contact__link">
-        <GitHubIcon class="contact__icon" :size="iconSize" />
+        <GitHubIcon :size="iconSize" />
       </a>
     </div>
   </div>
@@ -29,7 +29,7 @@ export default {
 
   data: () => {
     return {
-      iconSize: 40,
+      iconSize: 45,
       linkedin: "https://www.linkedin.com/in/nicklal/",
       github: "https://github.com/nlaldev",
     };
@@ -53,9 +53,6 @@ export default {
   &__link {
     margin: 0 10px;
     @include iconLink;
-    &:hover {
-      transform: scale(1.1);
-    }
   }
 }
 </style>

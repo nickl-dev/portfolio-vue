@@ -68,8 +68,8 @@
 }
 
 @mixin button {
+  @include link;
   border-radius: 5px;
-  padding: 10px 20px;
   font-weight: 600;
   color: $stockWhite;
   border: 1px solid $stockWhite;
@@ -78,7 +78,24 @@
 }
 
 @mixin invertToWhite {
-  border: $stockWhite;
+  border-color: $stockWhite;
   background: $stockWhite;
   color: $stockBlack;
+}
+
+@mixin invertToBlack {
+  border-color: $stockBlack;
+  background: $stockBlack;
+  color: $stockWhite;
+}
+
+@mixin link {
+  padding: 10px 20px;
+}
+
+@mixin demoLink {
+  @include button;
+  font-size: 16px;
+  color: $stockBlack;
+  border: 1px solid $stockBlack;
 }
