@@ -1,13 +1,17 @@
 <template>
   <div class="project">
-    <p class="project__title">{{ title }}</p>
-    <p class="project__description">{{ description }}</p>
-    <p class="project__techStack">{{ techStack }}</p>
-    <img class="project__image" :src="image" />
-    <div class="project__links">
-      <a class="project__demo" :href="demo">See Demo</a>
-      <a class="project__code" :href="code">See Code</a>
+    <div class="project__wrapper">
+      <p class="project__title">{{ title }}</p>
+      <p class="project__description">{{ description }}</p>
+      <p class="project__techStack">{{ techStack }}</p>
+      <div class="project__links">
+        <a class="project__demo" :href="demo">See Demo</a>
+        <a class="project__code" :href="code">See Code</a>
+      </div>
     </div>
+    <a :href="demo">
+      <img class="project__image" :src="image" />
+    </a>
   </div>
 </template>
 
@@ -49,21 +53,47 @@ export default {
 
 .project {
   @include flexCenter;
-  flex-direction: column;
-  margin: 20px 0;
+  @include flexColumn;
+  margin: 70px 0;
+  @include desktop {
+    width: 100%;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+  }
+  &__wrapper {
+    margin-bottom: 25px;
+    width: 100%;
+    max-width: 690px;
+    @include tablet {
+      margin-bottom: 50px;
+    }
+    @include desktop {
+      width: 350px;
+      margin: 0;
+    }
+  }
   &__title {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    @include textStart;
     @include desktop {
       font-size: 24px;
     }
   }
   &__description {
-    font-weight: bold;
+    margin-bottom: 15px;
+    @include textStart;
   }
-  &__image {
-    width: 200px;
+  &__techStack {
+    margin-bottom: 15px;
+    font-style: italic;
+    @include textStart;
   }
   &__links {
     @include flexCenter;
+    justify-content: flex-start;
   }
   &__demo {
     @include demoLink;
@@ -76,6 +106,17 @@ export default {
     transition: 0.1s ease-in-out;
     &:hover {
       margin-left: 5px;
+    }
+  }
+  &__image {
+    width: 100%;
+    margin: auto;
+    max-width: 690px;
+    border-radius: 5px;
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.175);
+    @include desktop {
+      width: 660px;
+      margin: 0;
     }
   }
 }

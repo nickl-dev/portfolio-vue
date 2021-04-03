@@ -13,7 +13,7 @@
 }
 
 @mixin name {
-  font-size: 40px;
+  font-size: 46px;
   @include tablet {
     font-size: 70px;
   }
@@ -27,10 +27,7 @@
   margin: 20px 0;
   display: inline-block;
   @include tablet {
-    font-size: 30px;
-  }
-  @include desktop {
-    font-size: 35px;
+    font-size: 25px;
   }
 }
 
@@ -55,10 +52,22 @@
   text-align: center;
 }
 
+@mixin textStart {
+  text-align: start;
+}
+
 @mixin flexCenter {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@mixin flexColumn {
+  flex-direction: column;
+}
+
+@mixin padding5 {
+  padding: 0 $padding5;
 }
 
 @mixin iconLink {

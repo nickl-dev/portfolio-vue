@@ -66,10 +66,13 @@ export default {
 
 .development {
   @include flexCenter;
-  flex-direction: column;
-  padding: 0 5%;
+  @include flexColumn;
+  @include padding5;
   &__heading {
     margin-top: 10vh;
+    @include desktop {
+      margin: 10vh 0;
+    }
   }
 }
 </style>

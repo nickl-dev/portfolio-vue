@@ -60,6 +60,7 @@ export default {
 .about {
   &__header {
     @include textCenter;
+    @include padding5;
     margin: 35vh 0;
   }
   &__name {
@@ -70,17 +71,26 @@ export default {
   }
   &__current {
     @include textCenter;
+    @include padding5;
     margin: 50vh 0;
   }
+  &__job {
+    font-size: 20px;
+  }
   &__employer {
-    width: 50%;
-    max-width: 400px;
+    width: 230px;
+    @include tablet {
+      width: 300px;
+    }
+    @include desktop {
+      width: 400px;
+    }
   }
   &__wrapper {
     background: $stockBlack;
-    padding: 50px 5%;
+    padding: 50px $padding5;
     @include tablet {
-      padding: 75px 5%;
+      padding: 75px $padding5;
       margin-bottom: 20vh;
     }
     @include desktop {

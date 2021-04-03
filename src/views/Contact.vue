@@ -45,10 +45,9 @@ export default {
   @include textCenter;
   flex-direction: column;
   height: 90vh;
-  padding: 0 5%;
+  @include padding5;
   &__thankyou {
     margin: 5vh 0;
-    font-weight: bold;
   }
   &__link {
     margin: 0 10px;
