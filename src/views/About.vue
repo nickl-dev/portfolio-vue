@@ -10,7 +10,9 @@
     </header>
     <div class="about__current">
       <h2 class="about__job">Currently: Front End Developer @</h2>
-      <img class="about__employer" :src="cd" />
+      <a href="https://www.canadadrives.ca/">
+        <img class="about__employer" :src="cd" />
+      </a>
     </div>
     <section class="about__wrapper">
       <div class="about__subwrapper">
@@ -24,7 +26,10 @@
             skills to work with a great team on great projects while learning
             something new every day.
           </p>
-          <a href="https://www.google.ca" class="about__resume" target="_blank"
+          <a
+            href="../nick-lal-webdev-resume.pdf"
+            class="about__resume"
+            target="_blank"
             >Resume</a
           >
         </div>
@@ -80,6 +85,7 @@ export default {
   }
   &__employer {
     width: 230px;
+
     @include tablet {
       width: 300px;
     }

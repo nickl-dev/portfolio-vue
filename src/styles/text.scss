@@ -38,10 +38,10 @@ $font24: 24px;
 @mixin name {
   font-size: 46px;
   @include tablet {
-    font-size: 70px;
+    font-size: 80px;
   }
   @include desktop {
-    font-size: 100px;
+    font-size: 120px;
   }
 }
 

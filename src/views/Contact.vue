@@ -6,10 +6,10 @@
     </p>
     <div class="contact__links">
       <a :href="linkedin" class="contact__link">
-        <LinkedInIcon :size="iconSize" />
+        <LinkedInIcon :size="iconSize" class="contact__icon" />
       </a>
       <a :href="github" class="contact__link">
-        <GitHubIcon :size="iconSize" />
+        <GitHubIcon :size="iconSize" class="contact__icon" />
       </a>
     </div>
   </div>
@@ -53,6 +53,9 @@ export default {
   &__link {
     margin: 0 10px;
     @include iconLink;
+    &:hover {
+      box-shadow: 0 3px 2px -2px rgba($stockBlack, 1);
+    }
   }
 }
 </style>
