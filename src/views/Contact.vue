@@ -38,7 +38,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import "@/styles/mixins.scss";
+@import "@/styles/global.scss";
 
 .contact {
   @include flexCenter;
@@ -48,6 +48,7 @@ export default {
   @include padding5;
   &__thankyou {
     margin: 5vh 0;
+    font-size: $font18;
   }
   &__link {
     margin: 0 10px;

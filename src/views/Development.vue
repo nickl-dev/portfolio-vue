@@ -62,7 +62,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import "@/styles/mixins.scss";
+@import "@/styles/global.scss";
 
 .development {
   @include flexCenter;

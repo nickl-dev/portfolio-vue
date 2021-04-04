@@ -1,0 +1,79 @@
+@import "./variables.scss";
+
+$avenir: "Avenir Next";
+$font18: 18px;
+$font20: 20px;
+$font24: 24px;
+
+@font-face {
+  font-family: $avenir;
+  src: url("~@/assets/fonts/linotype-AvenirNextLTPro.ttf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: $avenir;
+  src: url("~@/assets/fonts/linotype-AvenirNextLTProDemi.ttf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: $avenir;
+  src: url("~@/assets/fonts/linotype-AvenirNextLTProBold.ttf");
+  font-weight: 700;
+}
+
+@mixin pageHeading {
+  font-weight: 600;
+}
+
+@mixin textCenter {
+  text-align: center;
+}
+
+@mixin textStart {
+  text-align: start;
+}
+
+@mixin name {
+  font-size: 46px;
+  @include tablet {
+    font-size: 70px;
+  }
+  @include desktop {
+    font-size: 100px;
+  }
+}
+
+@mixin occupation {
+  font-size: 20px;
+  margin: 20px 0;
+  display: inline-block;
+  @include tablet {
+    font-size: 25px;
+  }
+}
+
+@mixin bio {
+  color: $stockWhite;
+  font-size: $font18;
+  margin: 20px auto;
+}
+
+@mixin projectTitle {
+  margin-bottom: 20px;
+  font-size: $font20;
+  font-weight: 600;
+  @include textStart;
+  @include textStart;
+  @include tablet {
+    font-size: $font24;
+  }
+}
+
+@mixin projectSubtext {
+  @include textStart;
+  @include tablet {
+    font-size: $font18;
+  }
+}

@@ -55,7 +55,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import "@/styles/mixins.scss";
+@import "@/styles/global.scss";
 
 .about {
   &__header {
@@ -75,7 +75,8 @@ export default {
     margin: 50vh 0;
   }
   &__job {
-    font-size: 20px;
+    font-weight: 600;
+    font-size: $font20;
   }
   &__employer {
     width: 230px;
@@ -119,7 +120,7 @@ export default {
   }
   &__resume {
     @include button;
-    font-size: 20px;
+    font-size: $font20;
     display: inline-block;
     &:hover {
       @include invertToWhite;

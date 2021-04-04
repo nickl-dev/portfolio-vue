@@ -41,7 +41,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import "@/styles/mixins.scss";
+@import "@/styles/global.scss";
 
 .nav {
   height: 70px;
@@ -53,7 +53,7 @@ export default {
   &__link {
     @include iconLink;
     margin: 0 20px;
-    transition: 0.1s ease-in-out;
+    transition: $transition;
     &:hover {
       box-shadow: 0 3px 2px -2px rgba($stockBlack, 1);
     }

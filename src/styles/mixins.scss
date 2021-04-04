@@ -1,4 +1,5 @@
 @import "./variables.scss";
+@import "./text.scss";
 
 @mixin tablet {
   @media (min-width: $tabletBreakpoint) {
@@ -12,25 +13,6 @@
   }
 }
 
-@mixin name {
-  font-size: 46px;
-  @include tablet {
-    font-size: 70px;
-  }
-  @include desktop {
-    font-size: 100px;
-  }
-}
-
-@mixin occupation {
-  font-size: 20px;
-  margin: 20px 0;
-  display: inline-block;
-  @include tablet {
-    font-size: 25px;
-  }
-}
-
 @mixin headshot {
   width: 260px;
   border-radius: 5px;
@@ -40,20 +22,6 @@
   @include desktop {
     width: 300px;
   }
-}
-
-@mixin bio {
-  color: $stockWhite;
-  font-size: 18px;
-  margin: 20px auto;
-}
-
-@mixin textCenter {
-  text-align: center;
-}
-
-@mixin textStart {
-  text-align: start;
 }
 
 @mixin flexCenter {
@@ -73,17 +41,28 @@
 @mixin iconLink {
   color: $stockBlack;
   outline: none;
-  transition: 0.1s ease-in-out;
+  transition: $transition;
 }
 
 @mixin button {
   @include link;
   border-radius: 5px;
-  font-weight: 600;
   color: $stockWhite;
   border: 1px solid $stockWhite;
-  transition: 0.1s ease-in-out;
-  font-size: 20px;
+  transition: $transition;
+  font-size: $font20;
+}
+
+@mixin link {
+  padding: 10px 20px;
+  font-weight: 600;
+}
+
+@mixin demoLink {
+  @include button;
+  font-size: 16px;
+  color: $stockBlack;
+  border: 1px solid $stockBlack;
 }
 
 @mixin invertToWhite {
@@ -96,15 +75,4 @@
   border-color: $stockBlack;
   background: $stockBlack;
   color: $stockWhite;
-}
-
-@mixin link {
-  padding: 10px 20px;
-}
-
-@mixin demoLink {
-  @include button;
-  font-size: 16px;
-  color: $stockBlack;
-  border: 1px solid $stockBlack;
 }

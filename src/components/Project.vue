@@ -49,7 +49,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import "@/styles/mixins.scss";
+@import "@/styles/global.scss";
 
 .project {
   @include flexCenter;
@@ -74,22 +74,16 @@ export default {
     }
   }
   &__title {
-    margin-bottom: 20px;
-    font-size: 20px;
-    font-weight: bold;
-    @include textStart;
-    @include desktop {
-      font-size: 24px;
-    }
+    @include projectTitle;
   }
   &__description {
     margin-bottom: 15px;
-    @include textStart;
+    @include projectSubtext;
   }
   &__techStack {
     margin-bottom: 15px;
     font-style: italic;
-    @include textStart;
+    @include projectSubtext;
   }
   &__links {
     @include flexCenter;
@@ -103,7 +97,7 @@ export default {
   }
   &__code {
     @include link;
-    transition: 0.1s ease-in-out;
+    transition: $transition;
     &:hover {
       margin-left: 5px;
     }
@@ -114,6 +108,13 @@ export default {
     max-width: 690px;
     border-radius: 5px;
     box-shadow: 0 16px 48px rgba(0, 0, 0, 0.175);
+    transition: 0.1s ease-in-out;
+    &:visited {
+      @include iconLink;
+    }
+    &:hover {
+      box-shadow: 0 32px 96px rgba(0, 0, 0, 0.3);
+    }
     @include desktop {
       width: 660px;
       margin: 0;
