@@ -37,7 +37,7 @@ export default {
             "Built with React, Semantic UI, Express, GraphQL and MongoDB",
           image: Greetings,
           demo: "https://nlaldevgreetings.netlify.app/",
-          code: "https://github.com/nlaldev/Greetings",
+          code: "https://github.com/nlaldev/greetings",
         },
         {
           title: "Cleanfolio",
@@ -45,7 +45,7 @@ export default {
           techStack: "Built with React and SASS",
           image: Cleanfolio,
           demo: "https://cleanfolio.netlify.app/",
-          code: "https://github.com/nlaldev/Cleanfolio",
+          code: "https://github.com/nlaldev/cleanfolio",
         },
         {
           title: "MyGradient",
@@ -53,7 +53,7 @@ export default {
           techStack: "Built with HTML, CSS and JavaScript",
           image: MyGradient,
           demo: "https://nlaldevmygradient.netlify.app/",
-          code: "https://github.com/nlaldev/MyGradient",
+          code: "https://github.com/nlaldev/mygradient",
         },
       ],
     };
