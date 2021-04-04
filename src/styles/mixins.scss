@@ -56,6 +56,7 @@
 @mixin link {
   padding: 10px 20px;
   font-weight: 600;
+  transition: $transition;
 }
 
 @mixin demoLink {
@@ -63,6 +64,17 @@
   font-size: 16px;
   color: $stockBlack;
   border: 1px solid $stockBlack;
+}
+
+@mixin codeLink {
+  @include link;
+  &:visited,
+  &:focus {
+    color: $stockBlack;
+  }
+  &:hover {
+    margin-left: 5px;
+  }
 }
 
 @mixin invertToWhite {

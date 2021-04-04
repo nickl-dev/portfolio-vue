@@ -96,14 +96,7 @@ export default {
     }
   }
   &__code {
-    @include link;
-    transition: $transition;
-    &:visited {
-      color: initial;
-    }
-    &:hover {
-      margin-left: 5px;
-    }
+    @include codeLink;
   }
   &__image {
     width: 100%;
