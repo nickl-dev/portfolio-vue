@@ -23,6 +23,7 @@ export default {
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  outline: none;
   font-family: $avenir;
 }
 

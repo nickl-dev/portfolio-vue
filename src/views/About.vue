@@ -98,7 +98,7 @@ export default {
     padding: 50px $padding5;
     @include tablet {
       padding: 75px $padding5;
-      margin-bottom: 20vh;
+      margin: 20vh 0;
     }
     @include desktop {
       padding: 100px 13%;
