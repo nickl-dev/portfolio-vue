@@ -21,10 +21,13 @@
           <p class="about__bio">
             I love creating things that are visually and functionally smooth.
             Front End Development is where I thrive - especially working with
-            Front End frameworks such as Vue and React. I'm passionate about UI,
-            debugging and finding new ways to solve new problems. I use my
-            skills to work with a great team on great projects while learning
-            something new every day.
+            frameworks such as Vue and React. I'm passionate about clean UI/UX design
+            and finding new ways to solve new problems.
+            <br/>
+            <b>
+              My main focus as a developer is to always be learning
+              and working with great people on great projects.
+            </b>
           </p>
           <a
             href="../nick-lal-webdev-resume.pdf"
