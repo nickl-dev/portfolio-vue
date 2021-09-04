@@ -4,13 +4,14 @@
       <h1 class="about__name">Hi, I'm Nick</h1>
       <vue-typer
         class="about__occupation"
-        text="I'm a Web Developer 🚀"
+        text="I'm a Developer 🚀"
         :repeat="0"
-      ></vue-typer>
+      >
+      </vue-typer>
     </header>
     <div class="about__current">
       <h2 class="about__job">Currently: Front End Developer @</h2>
-      <a href="https://www.canadadrives.ca/">
+      <a :href="companyLink" target="_blank">
         <img class="about__employer" :src="cd" />
       </a>
     </div>
@@ -23,18 +24,16 @@
             Front End Development is where I thrive - especially working with
             frameworks such as Vue and React. I'm passionate about clean UI/UX design
             and finding new ways to solve new problems.
-            <br/>
-            <b>
-              My main focus as a developer is to always be learning
-              and working with great people on great projects.
-            </b>
+            My main focus as a developer is to always be learning
+            and working with great people on great projects.
           </p>
           <a
-            href="../nick-lal-webdev-resume.pdf"
+            :href="resume"
             class="about__resume"
             target="_blank"
-            >Resume</a
           >
+          Resume
+          </a>
         </div>
       </div>
     </section>
@@ -55,8 +54,10 @@ export default {
 
   data: () => {
     return {
-      headshot: headshot,
       cd: cd,
+      companyLink: 'https://www.canadadrives.ca/',
+      headshot: headshot,
+      resume: '../nick-lal-resume.pdf'
     };
   },
 };
