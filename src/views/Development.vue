@@ -16,6 +16,8 @@
 
 <script>
 import Project from "@/components/Project.vue";
+
+// Project screenshots
 import Greetings from "@/assets/project-screenshots/greetings-screenshot.png";
 import Cleanfolio from "@/assets/project-screenshots/cleanfolio-screenshot.png";
 import MyGradient from "@/assets/project-screenshots/mygradient-screenshot.png";
@@ -34,14 +36,6 @@ export default {
     return {
       projects: [
         {
-          title: "Greetings",
-          description: "Social media app optimized for desktop",
-          techStack: "Built with React, Semantic UI, Express, GraphQL and MongoDB",
-          image: Greetings,
-          demo: "https://nlaldevgreetings.netlify.app/",
-          code: "https://github.com/nlaldev/greetings",
-        },
-        {
           title: "Cleanfolio",
           description: "Clean and simple portfolio site template for developers",
           techStack: "Built with Vue and SASS",
@@ -50,13 +44,21 @@ export default {
           code: "https://github.com/nlaldev/cleanfolio-vue",
         },
         {
+          title: "Greetings",
+          description: "Social media app optimized for desktop",
+          techStack: "Built with React, Semantic UI, Express, GraphQL and MongoDB",
+          image: Greetings,
+          demo: "https://nlaldevgreetings.netlify.app/",
+          code: "https://github.com/nlaldev/greetings",
+        },
+        {
           title: "MyGradient",
           description: "Dual color gradient generator",
           techStack: "Built with HTML, CSS and JavaScript",
           image: MyGradient,
           demo: "https://nlaldevmygradient.netlify.app/",
           code: "https://github.com/nlaldev/mygradient",
-        },
+        }
       ],
     };
   },
