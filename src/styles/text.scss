@@ -36,12 +36,14 @@ $font24: 24px;
 }
 
 @mixin name {
-  font-size: 46px;
+  font-size: 40px;
+
   @include tablet {
-    font-size: 80px;
+    font-size: 70px;
   }
+
   @include desktop {
-    font-size: 120px;
+    font-size: 110px;
   }
 }
 
@@ -50,6 +52,7 @@ $font24: 24px;
   font-weight: 600;
   margin: 20px 0;
   display: inline-block;
+
   @include tablet {
     font-size: 25px;
   }
@@ -67,6 +70,7 @@ $font24: 24px;
   font-weight: 600;
   @include textStart;
   @include textStart;
+
   @include tablet {
     font-size: $font24;
   }
@@ -74,6 +78,7 @@ $font24: 24px;
 
 @mixin projectSubtext {
   @include textStart;
+  
   @include tablet {
     font-size: $font18;
   }

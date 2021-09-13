@@ -20,6 +20,7 @@ import LinkedInIcon from "vue-material-design-icons/Linkedin.vue";
 import GitHubIcon from "vue-material-design-icons/Github.vue";
 
 export default {
+  // Name
   name: "Contact",
 
   components: {

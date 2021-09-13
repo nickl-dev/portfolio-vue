@@ -21,31 +21,33 @@ import Cleanfolio from "@/assets/project-screenshots/cleanfolio-screenshot.png";
 import MyGradient from "@/assets/project-screenshots/mygradient-screenshot.png";
 
 export default {
+  // Name
   name: "Development",
 
+  // Components
   components: {
     Project,
   },
 
+  // Data
   data: () => {
     return {
       projects: [
         {
           title: "Greetings",
           description: "Social media app optimized for desktop",
-          techStack:
-            "Built with React, Semantic UI, Express, GraphQL and MongoDB",
+          techStack: "Built with React, Semantic UI, Express, GraphQL and MongoDB",
           image: Greetings,
           demo: "https://nlaldevgreetings.netlify.app/",
           code: "https://github.com/nlaldev/greetings",
         },
         {
           title: "Cleanfolio",
-          description: "Minimal portfolio site template for developers",
-          techStack: "Built with React and SASS",
+          description: "Clean and simple portfolio site template for developers",
+          techStack: "Built with Vue and SASS",
           image: Cleanfolio,
           demo: "https://cleanfolio.netlify.app/",
-          code: "https://github.com/nlaldev/cleanfolio",
+          code: "https://github.com/nlaldev/cleanfolio-vue",
         },
         {
           title: "MyGradient",

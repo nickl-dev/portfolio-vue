@@ -16,9 +16,11 @@
 @mixin headshot {
   width: 260px;
   border-radius: 5px;
+
   @include tablet {
     width: 280px;
   }
+
   @include desktop {
     width: 300px;
   }
@@ -67,10 +69,12 @@
 
 @mixin codeLink {
   @include link;
+  
   &:visited,
   &:focus {
     color: $stockBlack;
   }
+
   &:hover {
     margin-left: 3px;
   }
