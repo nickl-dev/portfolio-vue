@@ -43,19 +43,15 @@ $font24: 24px;
   }
 
   @include desktop {
-    font-size: 110px;
+    font-size: 100px;
   }
 }
 
 @mixin occupation {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 600;
   margin: 20px 0;
   display: inline-block;
-
-  @include tablet {
-    font-size: 25px;
-  }
 }
 
 @mixin bio {
@@ -78,7 +74,7 @@ $font24: 24px;
 
 @mixin projectSubtext {
   @include textStart;
-  
+
   @include tablet {
     font-size: $font18;
   }

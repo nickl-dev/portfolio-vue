@@ -69,7 +69,7 @@
 
 @mixin codeLink {
   @include link;
-  
+
   &:visited,
   &:focus {
     color: $stockBlack;
