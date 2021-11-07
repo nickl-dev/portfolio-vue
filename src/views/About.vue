@@ -65,7 +65,7 @@ export default {
   &__header {
     @include textCenter;
     @include padding5;
-    margin: 35vh 0;
+    margin: 37vh 0;
   }
 
   &__name {
@@ -82,7 +82,7 @@ export default {
 
     @include tablet {
       padding: 75px $padding5;
-      margin: 15vh 0;
+      margin-bottom: 17.5vh;
     }
 
     @include desktop {

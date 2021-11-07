@@ -38,7 +38,7 @@ export default {
         {
           title: "Cleanfolio",
           description: "Clean and simple portfolio site template for developers",
-          techStack: "Built with Vue and SASS",
+          techStack: "Vue, SASS",
           image: Cleanfolio,
           demo: "https://cleanfolio.netlify.app/",
           code: "https://github.com/nlaldev/cleanfolio-vue",
@@ -46,7 +46,7 @@ export default {
         {
           title: "Greetings",
           description: "Social media app optimized for desktop",
-          techStack: "Built with React, Semantic UI, Express, GraphQL and MongoDB",
+          techStack: "React, Semantic UI, Express, GraphQL, MongoDB",
           image: Greetings,
           demo: "https://nlaldevgreetings.netlify.app/",
           code: "https://github.com/nlaldev/greetings",
@@ -54,7 +54,7 @@ export default {
         {
           title: "MyGradient",
           description: "Dual color gradient generator",
-          techStack: "Built with HTML, CSS and JavaScript",
+          techStack: "HTML, CSS, JavaScript",
           image: MyGradient,
           demo: "https://nlaldevmygradient.netlify.app/",
           code: "https://github.com/nlaldev/mygradient",
