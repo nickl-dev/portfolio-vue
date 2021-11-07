@@ -10,13 +10,6 @@
       </vue-typer>
     </header>
 
-    <div class="about__current">
-      <h2 class="about__job">Front End Developer @</h2>
-      <a :href="companyLink" target="_blank">
-        <img class="about__companyLogo" :src="companyLogo" />
-      </a>
-    </div>
-
     <section class="about__wrapper">
       <div class="about__subwrapper">
         <img :src="personalPicture" alt="Nick Lal" class="about__image" />
@@ -24,7 +17,7 @@
           <p class="about__bio">
             I love creating things that are visually and functionally smooth.
             Front End Development is where I thrive - especially working with
-            frameworks such as Vue and React. I'm passionate about clean UI/UX design
+            frameworks such as Vue and React. I'm passionate about clean UX/UI design
             and finding new ways to solve new problems.
             My main focus as a developer is to always be learning
             and working with great people on great projects.
@@ -45,7 +38,6 @@
 <script>
 import { VueTyper } from "vue-typer";
 import personalPicture from "@/assets/personal-picture.jpg";
-import companyLogo from "@/assets/company-logo.jpg";
 
 export default {
   // Name
@@ -59,8 +51,6 @@ export default {
   // Data
   data: () => {
     return {
-      companyLogo: companyLogo,
-      companyLink: 'https://www.canadadrives.ca/',
       personalPicture: personalPicture,
       resume: '../nick-lal-resume.pdf'
     };
@@ -86,36 +76,13 @@ export default {
     @include occupation;
   }
 
-  &__current {
-    @include textCenter;
-    @include padding5;
-    margin: 50vh 0;
-  }
-
-  &__job {
-    font-weight: 600;
-    font-size: $font20;
-  }
-
-  &__companyLogo {
-    width: 230px;
-
-    @include tablet {
-      width: 300px;
-    }
-
-    @include desktop {
-      width: 400px;
-    }
-  }
-
   &__wrapper {
     background: $stockBlack;
     padding: 50px $padding5;
 
     @include tablet {
       padding: 75px $padding5;
-      margin: 20vh 0;
+      margin: 15vh 0;
     }
 
     @include desktop {
@@ -153,7 +120,7 @@ export default {
     @include button;
     font-size: $font20;
     display: inline-block;
-    
+
     &:hover {
       @include invertToWhite;
     }
