@@ -1,3 +1,1 @@
-# My Portfolio Site 👨‍💻
-
-### Made with Vue
+# My Portfolio Site
