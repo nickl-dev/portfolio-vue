@@ -40,26 +40,23 @@ import { VueTyper } from "vue-typer";
 import personalPicture from "@/assets/personal-picture.jpg";
 
 export default {
-  // Name
   name: "About",
 
-  // Components
   components: {
     VueTyper,
   },
 
-  // Data
-  data: () => {
+  data () {
     return {
       personalPicture: personalPicture,
       resume: '../nick-lal-resume.pdf'
-    };
-  },
-};
+    }
+  }
+}
 </script>
 
 <style lang="scss">
-@import "@/styles/global.scss";
+@import "@/styles/global.scss"
 
 .about {
   &__header {

@@ -10,43 +10,35 @@
       </div>
     </div>
     <a :href="demo">
-      <img class="project__image" :src="image" />
+      <img class="project__image" :src="image" alt="Image of project" />
     </a>
   </div>
 </template>
 
 <script>
 export default {
-  // Name
   name: "Project",
-
-  // Props
   props: {
     title: {
       type: String,
       required: true,
     },
-
     description: {
       type: String,
       required: true,
     },
-
     techStack: {
       type: String,
       required: true,
     },
-
     image: {
       type: String,
       required: true,
     },
-
     demo: {
       type: String,
       required: true,
     },
-
     code: {
       type: String,
       required: true,

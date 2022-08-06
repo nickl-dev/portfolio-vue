@@ -3,7 +3,7 @@
     <h1 class="development__heading">DEVELOPMENT</h1>
     <Project
       v-for="project in projects"
-      v-bind:key="project.index"
+      :key="project.index"
       :title="project.title"
       :description="project.description"
       :techStack="project.techStack"
@@ -17,22 +17,18 @@
 <script>
 import Project from "@/components/Project.vue";
 
-// Project screenshots
 import Greetings from "@/assets/project-screenshots/greetings-screenshot.png";
 import Cleanfolio from "@/assets/project-screenshots/cleanfolio-screenshot.png";
 import MyGradient from "@/assets/project-screenshots/mygradient-screenshot.png";
 
 export default {
-  // Name
   name: "Development",
 
-  // Components
   components: {
     Project,
   },
 
-  // Data
-  data: () => {
+  data () {
     return {
       projects: [
         {

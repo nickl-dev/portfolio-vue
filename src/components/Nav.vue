@@ -41,18 +41,15 @@ import CodeIcon from "vue-material-design-icons/Xml.vue";
 import MailIcon from "vue-material-design-icons/Email.vue";
 
 export default {
-  // Name
   name: "Nav",
 
-  // Components
   components: {
     PersonIcon,
     CodeIcon,
     MailIcon,
   },
 
-  // Data
-  data: () => {
+  data () {
     return {
       iconSize: 40,
     };

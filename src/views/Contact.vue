@@ -20,7 +20,6 @@ import LinkedInIcon from "vue-material-design-icons/Linkedin.vue";
 import GitHubIcon from "vue-material-design-icons/Github.vue";
 
 export default {
-  // Name
   name: "Contact",
 
   components: {
@@ -28,11 +27,11 @@ export default {
     GitHubIcon,
   },
 
-  data: () => {
+  data () {
     return {
       iconSize: 45,
       linkedin: "https://www.linkedin.com/in/nicklal/",
-      github: "https://github.com/nlaldev",
+      github: "https://github.com/nickl-dev",
     };
   },
 };
