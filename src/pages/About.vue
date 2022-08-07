@@ -12,7 +12,7 @@
 
     <section class="about__wrapper">
       <div class="about__subwrapper">
-        <img :src="personalPicture" alt="Nick Lal" class="about__image" />
+        <img :src="portrait" alt="Portrait of Nick Lal" class="about__image" />
         <div class="about__biowrapper">
           <p class="about__bio">
             I love creating things that are visually and functionally smooth.
@@ -37,7 +37,7 @@
 
 <script>
 import { VueTyper } from "vue-typer";
-import personalPicture from "@/assets/personal-picture.jpg";
+import portrait from "@/assets/nick-lal-portrait.jpg";
 
 export default {
   name: "About",
@@ -48,7 +48,7 @@ export default {
 
   data () {
     return {
-      personalPicture: personalPicture,
+      portrait: portrait,
       resume: '../nick-lal-resume.pdf'
     }
   }
