@@ -34,14 +34,14 @@ export default {
         {
           title: "Cleanfolio",
           description: "Clean and simple portfolio site template for developers",
-          techStack: "Vue, SASS",
+          techStack: "Vue, Sass",
           image: Cleanfolio,
           demo: "https://nlaldevcleanfolio.netlify.app/",
           code: "https://github.com/nlaldev/cleanfolio-vue",
         },
         {
           title: "Greetings",
-          description: "Social media app",
+          description: "Social media application",
           techStack: "React, Semantic UI, Express, GraphQL, MongoDB",
           image: Greetings,
           demo: "https://nlaldevgreetings.netlify.app/",

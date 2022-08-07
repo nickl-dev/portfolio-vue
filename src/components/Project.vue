@@ -59,7 +59,6 @@ export default {
     width: 100%;
     flex-direction: row;
     align-items: flex-start;
-    justify-content: space-evenly;
   }
 
   &__wrapper {
@@ -72,7 +71,7 @@ export default {
     }
 
     @include desktop {
-      width: 350px;
+      width: 300px;
       margin: 0;
     }
   }
@@ -111,8 +110,7 @@ export default {
   &__image {
     width: 100%;
     margin: auto;
-    max-width: 690px;
-    border-radius: 5px;
+    max-width: 500px;
     box-shadow: 0 16px 48px rgba(0, 0, 0, 0.175);
     transition: 0.1s ease-in-out;
 
@@ -125,7 +123,6 @@ export default {
     }
 
     @include desktop {
-      width: 660px;
       margin: 0;
     }
   }

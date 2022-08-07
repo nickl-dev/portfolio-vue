@@ -4,11 +4,11 @@
       class="nav__link"
       active-class="nav__link--active"
       exact to="/"
-      @click="scrollToTop"
     >
       <PersonIcon
         title="About Me"
         :size="iconSize"
+        @click="scrollToTop"
       />
     </router-link>
 
@@ -16,11 +16,11 @@
       class="nav__link"
       active-class="nav__link--active"
       to="/development"
-      @click="scrollToTop"
     >
       <CodeIcon
         title="My Work"
         :size="iconSize"
+        @click="scrollToTop"
       />
     </router-link>
 
@@ -28,7 +28,6 @@
       class="nav__link"
       active-class="nav__link--active"
       to="/contact"
-      @click="scrollToTop"
     >
       <MailIcon
         title="Contact Me"
@@ -39,16 +38,16 @@
 </template>
 
 <script>
-import PersonIcon from "vue-material-design-icons/Account.vue";
-import CodeIcon from "vue-material-design-icons/Xml.vue";
-import MailIcon from "vue-material-design-icons/Email.vue";
+import PersonIcon from "vue-material-design-icons/Account.vue"
+import CodeIcon from "vue-material-design-icons/Xml.vue"
+import MailIcon from "vue-material-design-icons/Email.vue"
 
 export default {
   name: "Nav",
   components: {
     PersonIcon,
     CodeIcon,
-    MailIcon,
+    MailIcon
   },
   data () {
     return {
