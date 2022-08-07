@@ -14,8 +14,8 @@
 }
 
 @mixin headshot {
-  width: 250px;
-  border-radius: 5px;
+  width: 50%;
+  max-width: 230px;
 }
 
 @mixin flexCenter {

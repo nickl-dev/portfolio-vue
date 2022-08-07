@@ -15,12 +15,12 @@
         <img :src="portrait" alt="Portrait of Nick Lal" class="about__image" />
         <div class="about__biowrapper">
           <p class="about__bio">
-            I love creating things that are visually and functionally smooth.
-            Front End Development is where I thrive - especially working with
-            frameworks such as Vue and React. I'm passionate about clean UX/UI design
-            and finding new ways to solve new problems.
-            My main focus as a developer is to always be learning
-            and working with great people on great projects.
+            I’m a collaborative Software Developer experienced in building clean, 
+            responsive and accessible web applications.
+            Comfortable in an agile environment, working closely with UI/UX designers to combine 
+            function and form and producing a pixel perfect product. I’m most passionate about learning, 
+            problem solving and clean design.
+            Always seeking the opportunity to level up and work with great people on great projects.
           </p>
           <a
             :href="resume"
@@ -36,15 +36,13 @@
 </template>
 
 <script>
-import { VueTyper } from "vue-typer";
-import portrait from "@/assets/nick-lal-portrait.jpg";
+import { VueTyper } from "vue-typer"
+import portrait from "@/assets/nick-lal-portrait.jpg"
 
 export default {
   name: "About",
 
-  components: {
-    VueTyper,
-  },
+  components: { VueTyper },
 
   data () {
     return {
@@ -62,7 +60,7 @@ export default {
   &__header {
     @include textCenter;
     @include padding5;
-    margin: 37vh 0;
+    margin-top: 40vh;
   }
 
   &__name {
@@ -76,14 +74,16 @@ export default {
   &__wrapper {
     background: $stockBlack;
     padding: 50px $padding5;
+    margin-top: 40vh;
 
     @include tablet {
       padding: 75px $padding5;
-      margin-bottom: 17.5vh;
+      margin-bottom: 8vh;
     }
 
     @include desktop {
       padding: 100px 13%;
+      margin-bottom: 10vh;
     }
   }
 

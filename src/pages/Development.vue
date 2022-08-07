@@ -69,9 +69,9 @@ export default {
   @include flexColumn;
   @include padding5;
   &__heading {
-    margin-top: 10vh;
+    margin-top: 150px;
     @include desktop {
-      margin: 10vh 0;
+      margin-bottom: 30px;
     }
   }
 }

@@ -11,8 +11,6 @@
     "core-js": "^3.6.5",
     "vue": "^2.6.11",
     "vue-material-design-icons": "^4.11.0",
-    "vue-parallaxy": "^1.1.1",
-    "vue-pdf": "^4.2.0",
     "vue-router": "^3.2.0",
     "vue-typer": "^1.2.0"
   },
@@ -26,10 +24,11 @@
     "eslint": "^6.7.2",
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-vue": "^6.2.2",
-    "node-sass": "^4.12.0",
-    "prettier": "^2.2.1",
-    "sass-loader": "^8.0.2",
-    "vue-template-compiler": "^2.6.11"
+    "node-sass": "^7.0.1",
+    "sass": "^1.54.3",
+    "sass-loader": "^10.1.1",
+    "vue-template-compiler": "^2.6.11",
+    "webpack": "^4.0.0"
   },
   "eslintConfig": {
     "root": true,

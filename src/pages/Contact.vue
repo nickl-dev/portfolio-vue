@@ -44,7 +44,7 @@ export default {
   @include flexCenter;
   @include textCenter;
   flex-direction: column;
-  height: 80vh;
+  height: 100vh;
   @include padding5;
   &__thankyou {
     margin: 5vh 0;

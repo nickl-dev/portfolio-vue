@@ -6,13 +6,10 @@
 </template>
 
 <script>
-import Nav from "@/components/Nav.vue";
-
+import Nav from "@/components/Nav.vue"
 export default {
-  components: {
-    Nav,
-  },
-};
+  components: { Nav }
+}
 </script>
 
 <style lang="scss">

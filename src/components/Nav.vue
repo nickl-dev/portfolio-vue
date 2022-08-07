@@ -66,6 +66,10 @@ export default {
   justify-content: center;
   align-items: center;
   box-shadow: 0 3px 3px -2px rgba($stockBlack, 0.3);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: white;
 
   &__link {
     @include iconLink;
