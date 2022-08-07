@@ -39,7 +39,6 @@
 
 @mixin button {
   @include link;
-  border-radius: 5px;
   color: $stockWhite;
   border: 1px solid $stockWhite;
   transition: $transition;

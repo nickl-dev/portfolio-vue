@@ -8,6 +8,7 @@
       <PersonIcon
         title="About Me"
         :size="iconSize"
+        @click="scrollToTop"
       />
     </router-link>
 
@@ -19,6 +20,7 @@
       <CodeIcon
         title="My Work"
         :size="iconSize"
+        @click="scrollToTop"
       />
     </router-link>
 
@@ -30,6 +32,7 @@
       <MailIcon
         title="Contact Me"
         :size="iconSize"
+        @click="scrollToTop"
       />
     </router-link>
   </nav>
@@ -42,19 +45,22 @@ import MailIcon from "vue-material-design-icons/Email.vue";
 
 export default {
   name: "Nav",
-
   components: {
     PersonIcon,
     CodeIcon,
     MailIcon,
   },
-
   data () {
     return {
       iconSize: 40,
-    };
+    }
   },
-};
+  methods: {
+    scrollToTop () {
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+    }
+  }
+}
 </script>
 
 <style lang="scss">
