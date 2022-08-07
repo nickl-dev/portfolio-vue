@@ -16,25 +16,23 @@
 </template>
 
 <script>
-import LinkedInIcon from "vue-material-design-icons/Linkedin.vue";
-import GitHubIcon from "vue-material-design-icons/Github.vue";
+import LinkedInIcon from "vue-material-design-icons/Linkedin.vue"
+import GitHubIcon from "vue-material-design-icons/Github.vue"
 
 export default {
   name: "Contact",
-
   components: {
     LinkedInIcon,
-    GitHubIcon,
+    GitHubIcon
   },
-
   data () {
     return {
       iconSize: 45,
       linkedin: "https://www.linkedin.com/in/nicklal/",
-      github: "https://github.com/nickl-dev",
-    };
-  },
-};
+      github: "https://github.com/nickl-dev"
+    }
+  }
+}
 </script>
 
 <style lang="scss">

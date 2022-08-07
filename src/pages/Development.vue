@@ -16,18 +16,13 @@
 
 <script>
 import Project from "@/components/Project.vue";
-
-import Greetings from "@/assets/project-screenshots/greetings-screenshot.png";
-import Cleanfolio from "@/assets/project-screenshots/cleanfolio-screenshot.png";
-import MyGradient from "@/assets/project-screenshots/mygradient-screenshot.png";
+import Greetings from "@/assets/project-screenshots/greetings-screenshot.png"
+import Cleanfolio from "@/assets/project-screenshots/cleanfolio-screenshot.png"
+import MyGradient from "@/assets/project-screenshots/mygradient-screenshot.png"
 
 export default {
   name: "Development",
-
-  components: {
-    Project,
-  },
-
+  components: { Project },
   data () {
     return {
       projects: [
@@ -37,7 +32,7 @@ export default {
           techStack: "Vue, Sass",
           image: Cleanfolio,
           demo: "https://nlaldevcleanfolio.netlify.app/",
-          code: "https://github.com/nlaldev/cleanfolio-vue",
+          code: "https://github.com/nickl-dev/cleanfolio-vue",
         },
         {
           title: "Greetings",
@@ -45,7 +40,7 @@ export default {
           techStack: "React, Semantic UI, Express, GraphQL, MongoDB",
           image: Greetings,
           demo: "https://nlaldevgreetings.netlify.app/",
-          code: "https://github.com/nlaldev/greetings",
+          code: "https://github.com/nickl-dev/greetings",
         },
         {
           title: "MyGradient",
@@ -53,7 +48,7 @@ export default {
           techStack: "HTML, CSS, JavaScript",
           image: MyGradient,
           demo: "https://nlaldevmygradient.netlify.app/",
-          code: "https://github.com/nlaldev/mygradient",
+          code: "https://github.com/nickl-dev/mygradient",
         }
       ],
     };
