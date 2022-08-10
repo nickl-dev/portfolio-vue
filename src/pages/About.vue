@@ -76,16 +76,14 @@ export default {
   &__wrapper {
     background: $stockBlack;
     padding: 50px $padding5;
-    margin-top: 40vh;
+    margin-top: 43vh;
 
     @include tablet {
       padding: 75px $padding5;
-      margin-bottom: 7.5vh;
     }
 
     @include desktop {
       padding: 100px 13%;
-      margin-bottom: 6.5vh;
     }
   }
 
