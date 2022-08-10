@@ -2,7 +2,9 @@
   <div class="about">
     <header class="about__header">
       <h1 class="about__name">Hi, I'm Nick</h1>
-      <h2 class="about__occupation">I'm a Developer</h2>
+      <div class="about__occupation-wrapper">
+        <h2 class="about__occupation">I'm a Developer</h2>
+      </div>
     </header>
 
     <section class="about__wrapper">
@@ -42,14 +44,11 @@ export default {
 <style lang="scss">
 @import "@/styles/global.scss";
 
-@keyframes autoType {
+@keyframes type {
   from {
     width: 0;
-    border-right: 3px solid $stockBlack;
-  }
-  to {
+  } to {
     width: 100%;
-    border-right: none;
   }
 }
 
@@ -65,10 +64,13 @@ export default {
   }
 
   &__occupation {
+    &-wrapper {
+      display: inline-block
+    }
     @include occupation;
     overflow: hidden;
-    animation: autoType 2s steps(30);
     white-space: nowrap;
+    animation: type 1.5s forwards;
   }
 
   &__wrapper {
@@ -78,12 +80,12 @@ export default {
 
     @include tablet {
       padding: 75px $padding5;
-      margin-bottom: 8vh;
+      margin-bottom: 7.5vh;
     }
 
     @include desktop {
       padding: 100px 13%;
-      margin-bottom: 10vh;
+      margin-bottom: 6.5vh;
     }
   }
 
