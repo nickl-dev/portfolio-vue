@@ -5,11 +5,23 @@
       Thank you for taking the time to view my portfolio.
     </p>
     <div class="contact__links">
-      <a :href="linkedin" class="contact__link">
-        <LinkedInIcon :size="iconSize" class="contact__icon" />
+      <a 
+        :href="linkedin" 
+        class="contact__link"
+      >
+        <LinkedInIcon 
+          :size="iconSize" 
+          class="contact__icon" 
+        />
       </a>
-      <a :href="github" class="contact__link">
-        <GitHubIcon :size="iconSize" class="contact__icon" />
+      <a 
+        :href="github" 
+        class="contact__link"
+      >
+        <GitHubIcon 
+          :size="iconSize" 
+          class="contact__icon" 
+        />
       </a>
     </div>
   </div>

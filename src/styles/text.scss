@@ -32,8 +32,7 @@ $font24: 24px;
 @mixin occupation {
   font-size: 25px;
   font-weight: 600;
-  margin: 20px 0;
-  display: inline-block;
+  margin: 20px auto 0 auto;
 }
 
 @mixin bio {

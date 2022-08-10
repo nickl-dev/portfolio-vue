@@ -32,7 +32,7 @@ export default {
           techStack: "Vue, Sass",
           image: Cleanfolio,
           demo: "https://nlaldevcleanfolio.netlify.app/",
-          code: "https://github.com/nickl-dev/cleanfolio-vue",
+          code: "https://github.com/nickl-dev/cleanfolio-vue"
         },
         {
           title: "Greetings",
@@ -40,7 +40,7 @@ export default {
           techStack: "React, Semantic UI, Express, GraphQL, MongoDB",
           image: Greetings,
           demo: "https://nlaldevgreetings.netlify.app/",
-          code: "https://github.com/nickl-dev/greetings",
+          code: "https://github.com/nickl-dev/greetings"
         },
         {
           title: "MyGradient",
@@ -48,12 +48,12 @@ export default {
           techStack: "HTML, CSS, JavaScript",
           image: MyGradient,
           demo: "https://nlaldevmygradient.netlify.app/",
-          code: "https://github.com/nickl-dev/mygradient",
+          code: "https://github.com/nickl-dev/mygradient"
         }
-      ],
-    };
-  },
-};
+      ]
+    }
+  }
+}
 </script>
 
 <style lang="scss">

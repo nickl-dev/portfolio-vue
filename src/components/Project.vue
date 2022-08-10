@@ -17,7 +17,7 @@
 
 <script>
 export default {
-  name: "Project",
+  name: 'Project',
   props: {
     title: {
       type: String,
@@ -48,7 +48,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import "@/styles/global.scss";
+@import '@/styles/global.scss';
 
 .project {
   @include flexCenter;

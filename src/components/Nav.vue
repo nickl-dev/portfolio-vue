@@ -3,12 +3,13 @@
     <router-link
       class="nav__link"
       active-class="nav__link--active"
-      exact to="/"
+      exact
+      to="/"
     >
-      <PersonIcon
-        title="About Me"
-        :size="iconSize"
-        @click="scrollToTop"
+      <PersonIcon 
+        title="About Me" 
+        :size="iconSize" 
+        @click="scrollToTop" 
       />
     </router-link>
 
@@ -17,10 +18,10 @@
       active-class="nav__link--active"
       to="/development"
     >
-      <CodeIcon
-        title="My Work"
-        :size="iconSize"
-        @click="scrollToTop"
+      <CodeIcon 
+        title="My Work" 
+        :size="iconSize" 
+        @click="scrollToTop" 
       />
     </router-link>
 
@@ -29,9 +30,9 @@
       active-class="nav__link--active"
       to="/contact"
     >
-      <MailIcon
-        title="Contact Me"
-        :size="iconSize"
+      <MailIcon 
+        title="Contact Me" 
+        :size="iconSize" 
       />
     </router-link>
   </nav>
@@ -49,14 +50,14 @@ export default {
     CodeIcon,
     MailIcon
   },
-  data () {
+  data() {
     return {
-      iconSize: 40,
+      iconSize: 35,
     }
   },
   methods: {
-    scrollToTop () {
-      window.scrollTo({ top: 0, behavior: 'smooth' })
+    scrollToTop() {
+      window.scrollTo({ top: 0, behavior: "smooth" });
     }
   }
 }
@@ -66,7 +67,7 @@ export default {
 @import "@/styles/global.scss";
 
 .nav {
-  height: 70px;
+  height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
