@@ -1,8 +1,8 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import About from '../pages/About.vue'
-import Development from '../pages/Development.vue'
-import Contact from '../pages/Contact.vue'
+import Vue from 'vue';
+import VueRouter from 'vue-router';
+import About from '../pages/About.vue';
+import Development from '../pages/Development.vue';
+import Contact from '../pages/Contact.vue';
 
 Vue.use(VueRouter);
 

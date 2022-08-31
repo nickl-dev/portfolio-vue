@@ -16,9 +16,9 @@
 
 <script>
 import Project from "@/components/Project.vue";
-import Greetings from "@/assets/project-screenshots/greetings-screenshot.png"
-import Cleanfolio from "@/assets/project-screenshots/cleanfolio-screenshot.png"
-import MyGradient from "@/assets/project-screenshots/mygradient-screenshot.png"
+import Greetings from "@/assets/project-screenshots/greetings-screenshot.png";
+import Cleanfolio from "@/assets/project-screenshots/cleanfolio-screenshot.png";
+import MyGradient from "@/assets/project-screenshots/mygradient-screenshot.png";
 
 export default {
   name: "Development",

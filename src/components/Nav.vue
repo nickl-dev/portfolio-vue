@@ -39,22 +39,25 @@
 </template>
 
 <script>
-import PersonIcon from "vue-material-design-icons/Account.vue"
-import CodeIcon from "vue-material-design-icons/Xml.vue"
-import MailIcon from "vue-material-design-icons/Email.vue"
+import PersonIcon from "vue-material-design-icons/Account.vue";
+import CodeIcon from "vue-material-design-icons/Xml.vue";
+import MailIcon from "vue-material-design-icons/Email.vue";
 
 export default {
   name: "Nav",
+
   components: {
     PersonIcon,
     CodeIcon,
     MailIcon
   },
+
   data() {
     return {
       iconSize: 35,
     }
   },
+
   methods: {
     scrollToTop() {
       window.scrollTo({ top: 0, behavior: "smooth" });

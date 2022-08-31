@@ -28,10 +28,11 @@
 </template>
 
 <script>
-import portrait from "@/assets/nick-lal-portrait.jpg"
+import portrait from "@/assets/nick-lal-portrait.jpg";
 
 export default {
   name: "About",
+  
   data() {
     return {
       portrait: portrait,
