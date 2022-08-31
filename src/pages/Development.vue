@@ -22,7 +22,9 @@ import MyGradient from "@/assets/project-screenshots/mygradient-screenshot.png"
 
 export default {
   name: "Development",
+
   components: { Project },
+
   data () {
     return {
       projects: [
@@ -45,7 +47,7 @@ export default {
         {
           title: "MyGradient",
           description: "Dual color gradient generator",
-          techStack: "HTML, CSS, JavaScript",
+          techStack: "HTML, Sass, JavaScript",
           image: MyGradient,
           demo: "https://nlaldevmygradient.netlify.app/",
           code: "https://github.com/nickl-dev/mygradient"
