@@ -73,6 +73,7 @@ export default {
     @include desktop {
       width: 300px;
       margin: 0;
+      padding-right: 30px; 
     }
   }
 
@@ -87,7 +88,7 @@ export default {
 
   &__techStack {
     margin-bottom: 15px;
-    font-style: italic;
+    font-family: monospace;
     @include projectSubtext;
   }
 

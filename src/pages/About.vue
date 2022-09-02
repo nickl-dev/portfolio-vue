@@ -12,13 +12,12 @@
         <img :src="portrait" alt="Portrait of Nick Lal" class="about__image" />
         <div class="about__biowrapper">
           <p class="about__bio">
-            I’m a collaborative Software Developer experienced in building
-            clean, responsive and accessible web applications. Comfortable in an
-            agile environment, working closely with UI/UX designers to combine
-            function and form and producing a pixel perfect product. I’m most
-            passionate about learning, problem solving and clean design. Always
-            seeking the opportunity to level up and work with great people on
-            great projects.
+            I’m a collaborative Software Developer experienced in building 
+            clean, responsive and accessible web applications. 
+            Comfortable in an agile environment, working closely with Product Managers/Owners,
+            Designers, and QA to design and develop high-quality, pixel-perfect solutions.
+            I’m most passionate about learning, problem solving and clean design. 
+            Always seeking the opportunity to level up and work with great people on great projects.
           </p>
           <a :href="resume" class="about__resume" target="_blank"> Resume </a>
         </div>

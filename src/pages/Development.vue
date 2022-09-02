@@ -16,9 +16,11 @@
 
 <script>
 import Project from "@/components/Project.vue";
-import Greetings from "@/assets/project-screenshots/greetings-screenshot.png";
-import Cleanfolio from "@/assets/project-screenshots/cleanfolio-screenshot.png";
-import MyGradient from "@/assets/project-screenshots/mygradient-screenshot.png";
+import GreetingsScreenshot from "@/assets/project-screenshots/greetings-screenshot.png";
+import CleanfolioScreenshot from "@/assets/project-screenshots/cleanfolio-screenshot.png";
+import MyGradientScreenshot from "@/assets/project-screenshots/mygradient-screenshot.png";
+import CanadaDrivesScreenshot from '@/assets/project-screenshots/canadadrives-homepage-2.0-screenshot.png';
+import AutoCreditDealsScreenshot from '@/assets/project-screenshots/autocreditdeals-site-2.0-screenshot.png'
 
 export default {
   name: "Development",
@@ -29,10 +31,26 @@ export default {
     return {
       projects: [
         {
+          title: 'Canada Drives - Homepage 2.0',
+          description: 'Canada Drives static website home page 2.0',
+          techStack: 'Nuxt, JavaScript, Tailwind, Sass',
+          image:CanadaDrivesScreenshot,
+          demo: 'https://www.canadadrives.ca/',
+          code: 'https://www.canadadrives.ca/'
+        },
+        {
+          title: 'Auto Credit Deals - Website 2.0',
+          description: 'Auto Credit Deals static website 2.0',
+          techStack: 'Nuxt, JavaScript, Tailwind, Sass',
+          image: AutoCreditDealsScreenshot,
+          demo: 'https://autocreditdeals.ca/',
+          code: 'https://autocreditdeals.ca/'
+        },
+        {
           title: "Cleanfolio",
           description: "Clean and simple portfolio site template for developers",
           techStack: "Vue, Sass",
-          image: Cleanfolio,
+          image: CleanfolioScreenshot,
           demo: "https://nlaldevcleanfolio.netlify.app/",
           code: "https://github.com/nickl-dev/cleanfolio-vue"
         },
@@ -40,7 +58,7 @@ export default {
           title: "Greetings",
           description: "Social media application",
           techStack: "React, Semantic UI, Express, GraphQL, MongoDB",
-          image: Greetings,
+          image: GreetingsScreenshot,
           demo: "https://nlaldevgreetings.netlify.app/",
           code: "https://github.com/nickl-dev/greetings"
         },
@@ -48,7 +66,7 @@ export default {
           title: "MyGradient",
           description: "Dual color gradient generator",
           techStack: "HTML, Sass, JavaScript",
-          image: MyGradient,
+          image: MyGradientScreenshot,
           demo: "https://nlaldevmygradient.netlify.app/",
           code: "https://github.com/nickl-dev/mygradient"
         }
