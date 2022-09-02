@@ -33,7 +33,7 @@ export default {
         {
           title: 'Canada Drives - Homepage 2.0',
           description: 'Canada Drives static website home page 2.0',
-          techStack: 'Nuxt, JavaScript, Tailwind, Sass',
+          techStack: 'Nuxt, JavaScript, Tailwind, SASS',
           image:CanadaDrivesScreenshot,
           demo: 'https://www.canadadrives.ca/',
           code: 'https://www.canadadrives.ca/'
@@ -41,7 +41,7 @@ export default {
         {
           title: 'Auto Credit Deals - Website 2.0',
           description: 'Auto Credit Deals static website 2.0',
-          techStack: 'Nuxt, JavaScript, Tailwind, Sass',
+          techStack: 'Nuxt, JavaScript, Tailwind, SASS',
           image: AutoCreditDealsScreenshot,
           demo: 'https://autocreditdeals.ca/',
           code: 'https://autocreditdeals.ca/'
@@ -49,7 +49,7 @@ export default {
         {
           title: "Cleanfolio",
           description: "Clean and simple portfolio site template for developers",
-          techStack: "Vue, Sass",
+          techStack: "Vue, JavaScript, SASS",
           image: CleanfolioScreenshot,
           demo: "https://nlaldevcleanfolio.netlify.app/",
           code: "https://github.com/nickl-dev/cleanfolio-vue"
@@ -57,7 +57,7 @@ export default {
         {
           title: "Greetings",
           description: "Social media application",
-          techStack: "React, Semantic UI, Express, GraphQL, MongoDB",
+          techStack: "React, JavaScript, Semantic UI, Express, GraphQL, MongoDB",
           image: GreetingsScreenshot,
           demo: "https://nlaldevgreetings.netlify.app/",
           code: "https://github.com/nickl-dev/greetings"
@@ -65,7 +65,7 @@ export default {
         {
           title: "MyGradient",
           description: "Dual color gradient generator",
-          techStack: "HTML, Sass, JavaScript",
+          techStack: "HTML, SASS, JavaScript",
           image: MyGradientScreenshot,
           demo: "https://nlaldevmygradient.netlify.app/",
           code: "https://github.com/nickl-dev/mygradient"
