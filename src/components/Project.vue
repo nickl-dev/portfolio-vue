@@ -5,12 +5,23 @@
       <p class="project__description">{{ description }}</p>
       <p class="project__techStack">{{ techStack }}</p>
       <div class="project__links">
-        <a class="project__demo" :href="demo">See Demo</a>
-        <a class="project__code" :href="code">See Code</a>
+        <a 
+          class="project__demo" 
+          :href="demo">See Demo
+        </a>
+        <a 
+          class="project__code" 
+          :href="code">See Code
+        </a>
       </div>
     </div>
     <a :href="demo">
-      <img class="project__image" :src="image" alt="Image of project" />
+      <img 
+        class="project__image"
+        :src="image"
+        alt="Image of project"
+        loading="lazy"
+      />
     </a>
   </div>
 </template>

@@ -9,7 +9,12 @@
 
     <section class="about__wrapper">
       <div class="about__subwrapper">
-        <img :src="portrait" alt="Portrait of Nick Lal" class="about__image" />
+        <img 
+          :src="portrait"
+          alt="Portrait of Nick Lal"
+          class="about__image"
+          loading="lazy"
+        />
         <div class="about__biowrapper">
           <p class="about__bio">
             I’m a collaborative Software Developer experienced in building 
@@ -19,7 +24,13 @@
             I’m most passionate about learning, problem solving and clean design. 
             Always seeking the opportunity to level up and work with great people on great projects.
           </p>
-          <a :href="resume" class="about__resume" target="_blank"> Resume </a>
+          <a 
+            :href="resume"
+            class="about__resume"
+            target="_blank"
+          > 
+            Resume
+          </a>
         </div>
       </div>
     </section>
@@ -32,7 +43,7 @@ import portrait from "@/assets/nick-lal-portrait.jpg";
 export default {
   name: "About",
   
-  data() {
+  data () {
     return {
       portrait: portrait,
       resume: "../nick-lal-resume.pdf"
