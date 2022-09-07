@@ -30,9 +30,12 @@ $font24: 24px;
 }
 
 @mixin occupation {
-  font-size: 25px;
+  font-size: $font20;
   font-weight: 600;
   margin: 20px auto 0 auto;
+  @include tablet {
+    font-size: 25px;
+  }
 }
 
 @mixin bio {

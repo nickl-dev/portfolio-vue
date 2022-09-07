@@ -3,7 +3,7 @@
     <header class="about__header">
       <h1 class="about__name">Hi, I'm Nick</h1>
       <div class="about__occupation-wrapper">
-        <h2 class="about__occupation">I'm a Developer</h2>
+        <h2 class="about__occupation">I'm a Software Developer</h2>
       </div>
     </header>
 
