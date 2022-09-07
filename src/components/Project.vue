@@ -7,18 +7,22 @@
       <div class="project__links">
         <a 
           class="project__demo" 
-          :href="demo">See Demo
+          :href="demo">
+            See Demo
         </a>
         <a 
+          v-if="code"
           class="project__code" 
-          :href="code">See Code
+          :href="code"
+        >
+          See Code
         </a>
       </div>
     </div>
     <a :href="demo">
       <img 
-        class="project__image"
         :src="image"
+        class="project__image"
         alt="Image of project"
         loading="lazy"
       />
@@ -52,7 +56,7 @@ export default {
     },
     code: {
       type: String,
-      required: true
+      default: ''
     }
   }
 }

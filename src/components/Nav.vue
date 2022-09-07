@@ -16,7 +16,7 @@
     <router-link
       class="nav__link"
       active-class="nav__link--active"
-      to="/development"
+      to="/my-work"
     >
       <CodeIcon 
         title="My Work" 

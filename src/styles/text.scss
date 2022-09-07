@@ -47,7 +47,6 @@ $font24: 24px;
   font-weight: 600;
   @include textStart;
   @include textStart;
-
   @include tablet {
     font-size: $font24;
   }

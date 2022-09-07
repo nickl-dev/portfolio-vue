@@ -1,8 +1,8 @@
 <template>
   <div class="contact">
-    <h1 class="contact__heading">CONTACT</h1>
+    <h1 class="contact__heading">Contact</h1>
     <p class="contact__thankyou">
-      Thank you for taking the time to view my portfolio.
+      Thank you for viewing my portfolio!
     </p>
     <div class="contact__links">
       <a 

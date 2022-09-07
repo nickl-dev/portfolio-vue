@@ -1,6 +1,6 @@
 <template>
-  <div class="development">
-    <h1 class="development__heading">DEVELOPMENT</h1>
+  <div class="my-work">
+    <h1 class="my-work__heading">My Work</h1>
     <Project
       v-for="project in projects"
       :key="project.index"
@@ -23,7 +23,7 @@ import CanadaDrivesScreenshot from '@/assets/project-screenshots/canadadrives-ho
 import AutoCreditDealsScreenshot from '@/assets/project-screenshots/autocreditdeals-site-2.0-screenshot.png'
 
 export default {
-  name: "Development",
+  name: "MyWork",
 
   components: { Project },
 
@@ -35,16 +35,14 @@ export default {
           description: 'Canada Drives static website home page 2.0',
           techStack: 'Nuxt, JavaScript, Tailwind, SASS',
           image:CanadaDrivesScreenshot,
-          demo: 'https://www.canadadrives.ca/',
-          code: 'https://www.canadadrives.ca/'
+          demo: 'https://www.canadadrives.ca/'
         },
         {
           title: 'Auto Credit Deals - Website 2.0',
           description: 'Auto Credit Deals static website 2.0',
           techStack: 'Nuxt, JavaScript, Tailwind, SASS',
           image: AutoCreditDealsScreenshot,
-          demo: 'https://autocreditdeals.ca/',
-          code: 'https://autocreditdeals.ca/'
+          demo: 'https://autocreditdeals.ca/'
         },
         {
           title: "Cleanfolio",
@@ -79,7 +77,7 @@ export default {
 <style lang="scss">
 @import "@/styles/global.scss";
 
-.development {
+.my-work {
   @include flexCenter;
   @include flexColumn;
   @include padding5;
