@@ -8,8 +8,9 @@ Built with ```Vue, JavaScript, SASS```
 
 <a href="https://www.nicklal.dev">
   <img 
-    src="/src/assets/nick-lal-portrait.jpg"
-    width="100"
+    src="https://miro.medium.com/max/1400/1*vJjJ3Mdok6Rvxx85IIRqBQ.gif"
+    width="150"
+    style="150"
     loading="lazy"
   />
 </a>
