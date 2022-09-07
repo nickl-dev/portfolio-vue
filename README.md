@@ -3,6 +3,7 @@
 <a href="https://www.nicklal.dev">
   <img 
     src="https://miro.medium.com/max/1400/1*vJjJ3Mdok6Rvxx85IIRqBQ.gif"
+    alt="Laptop writing code GIF"
     width="200"
     style="200"
     loading="lazy"
