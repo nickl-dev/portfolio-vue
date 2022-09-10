@@ -9,7 +9,7 @@
 
     <section class="about__wrapper">
       <div class="about__subwrapper">
-        <img 
+        <img
           :src="portrait"
           alt="Portrait of Nick Lal"
           class="about__image"
@@ -17,19 +17,21 @@
         />
         <div class="about__biowrapper">
           <p class="about__bio">
-            I’m a collaborative Software Developer experienced in building 
-            clean, responsive and accessible web applications. 
-            Comfortable in an agile environment, working closely with Product Managers/Owners,
-            Designers, and QA to design and develop high-quality, pixel-perfect solutions.
-            I’m most passionate about learning, problem solving and clean design. 
-            Always seeking the opportunity to level up and work with great people on great projects.
+            I’m a collaborative Software Developer experienced in building
+            clean, responsive and accessible web applications. Comfortable in an
+            agile environment, working closely with Product Managers/Owners,
+            Designers, and QA to design and develop high-quality, pixel-perfect
+            solutions, as well as translate user and business needs into clean,
+            efficient, reusable code. I’m most passionate about learning,
+            problem solving and clean design. Always seeking the opportunity to
+            level up and work with great people on great projects.
           </p>
           <a 
-            :href="resume"
-            class="about__resume"
+            :href="resume" 
+            class="about__resume" 
             target="_blank"
           > 
-            Resume
+            Resume 
           </a>
         </div>
       </div>
@@ -38,12 +40,11 @@
 </template>
 
 <script>
-import portrait from "@/assets/nick-lal-portrait.jpg";
+import portrait from "@/assets/nick-lal-portrait.jpg"
 
 export default {
   name: "About",
-  
-  data () {
+  data() {
     return {
       portrait: portrait,
       resume: "../nick-lal-resume.pdf"
@@ -56,11 +57,8 @@ export default {
 @import "@/styles/global.scss";
 
 @keyframes type {
-  from {
-    width: 0;
-  } to {
-    width: 100%;
-  }
+  from { width: 0; }
+  to { width: 100%; }
 }
 
 .about {
@@ -76,7 +74,7 @@ export default {
 
   &__occupation {
     &-wrapper {
-      display: inline-block
+      display: inline-block;
     }
     @include occupation;
     overflow: hidden;
@@ -100,7 +98,7 @@ export default {
 
   &__subwrapper {
     @include textCenter;
-
+    
     @include tablet {
       @include flexCenter;
       justify-content: space-evenly;

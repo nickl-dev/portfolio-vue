@@ -15,34 +15,34 @@
 </template>
 
 <script>
-import Project from "@/components/Project.vue";
-import GreetingsScreenshot from "@/assets/project-screenshots/greetings-screenshot.png";
-import CleanfolioScreenshot from "@/assets/project-screenshots/cleanfolio-screenshot.png";
-import MyGradientScreenshot from "@/assets/project-screenshots/mygradient-screenshot.png";
-import CanadaDrivesScreenshot from '@/assets/project-screenshots/canadadrives-homepage-2.0-screenshot.png';
-import AutoCreditDealsScreenshot from '@/assets/project-screenshots/autocreditdeals-site-2.0-screenshot.png'
+import Project from "@/components/Project.vue"
+import GreetingsScreenshot from "@/assets/project-screenshots/greetings-screenshot.png"
+import CleanfolioScreenshot from "@/assets/project-screenshots/cleanfolio-screenshot.png"
+import MyGradientScreenshot from "@/assets/project-screenshots/mygradient-screenshot.png"
+import CanadaDrivesScreenshot from "@/assets/project-screenshots/canadadrives-homepage-2.0-screenshot.png"
+import AutoCreditDealsScreenshot from "@/assets/project-screenshots/autocreditdeals-site-2.0-screenshot.png"
 
 export default {
   name: "MyWork",
 
   components: { Project },
 
-  data () {
+  data() {
     return {
       projects: [
         {
-          title: 'Canada Drives - Homepage 2.0',
-          description: 'Canada Drives static website home page 2.0',
-          techStack: 'Nuxt, JavaScript, Tailwind, SASS',
-          image:CanadaDrivesScreenshot,
-          demo: 'https://www.canadadrives.ca/'
+          title: "Canada Drives - Homepage 2.0",
+          description: "Canada Drives static website home page 2.0",
+          techStack: "Nuxt, JavaScript, Tailwind, SASS",
+          image: CanadaDrivesScreenshot,
+          demo: "https://www.canadadrives.ca/"
         },
         {
-          title: 'Auto Credit Deals - Website 2.0',
-          description: 'Auto Credit Deals static website 2.0',
-          techStack: 'Nuxt, JavaScript, Tailwind, SASS',
+          title: "Auto Credit Deals - Website 2.0",
+          description: "Auto Credit Deals static website 2.0",
+          techStack: "Nuxt, JavaScript, Tailwind, SASS",
           image: AutoCreditDealsScreenshot,
-          demo: 'https://autocreditdeals.ca/'
+          demo: "https://autocreditdeals.ca/"
         },
         {
           title: "Cleanfolio",
@@ -55,7 +55,7 @@ export default {
         {
           title: "Greetings",
           description: "Social media application",
-          techStack: "React, JavaScript, Semantic UI, Express, GraphQL, MongoDB",
+          techStack: "React, JavaScript, Semantic UI, Express, Apollo, GraphQL, MongoDB",
           image: GreetingsScreenshot,
           demo: "https://nlaldevgreetings.netlify.app/",
           code: "https://github.com/nickl-dev/greetings"
