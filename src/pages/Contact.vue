@@ -54,20 +54,20 @@ export default {
 
 .contact {
   @include flexCenter;
-  @include textCenter;
+  @include padding5;
+  text-align: center;
   flex-direction: column;
   height: 100vh;
-  @include padding5;
+
   &__thankyou {
     margin: 5vh 0;
     font-size: $font18;
   }
+
   &__link {
-    margin: 0 10px;
     @include iconLink;
-    &:hover {
-      box-shadow: 0 3px 2px -2px rgba($stockBlack, 1);
-    }
+    margin: 0 10px;
+    &:hover { box-shadow: 0 3px 2px -2px rgba($stockBlack, 1); }
   }
 }
 </style>

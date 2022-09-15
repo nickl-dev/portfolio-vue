@@ -44,7 +44,7 @@ import portrait from "@/assets/nick-lal-portrait.jpg"
 
 export default {
   name: "About",
-  data() {
+  data () {
     return {
       portrait: portrait,
       resume: "../nick-lal-resume.pdf"
@@ -63,42 +63,38 @@ export default {
 
 .about {
   &__header {
-    @include textCenter;
     @include padding5;
+    text-align: center;
     margin-top: 40vh;
   }
 
   &__name {
-    @include name;
+    font-size: 40px;
+    @include tablet { font-size: 70px; }
+    @include desktop { font-size: 100px; }
   }
 
   &__occupation {
-    &-wrapper {
-      display: inline-block;
-    }
-    @include occupation;
     overflow: hidden;
     white-space: nowrap;
     animation: type 1.5s forwards;
+    font-size: $font20;
+    font-weight: 600;
+    margin: 20px auto 0 auto;
+    @include tablet { font-size: 25px; }
+    &-wrapper { display: inline-block; }
   }
 
   &__wrapper {
     background: $stockBlack;
     padding: 50px $padding5;
     margin-top: 43vh;
-
-    @include tablet {
-      padding: 75px $padding5;
-    }
-
-    @include desktop {
-      padding: 100px 13%;
-    }
+    @include tablet { padding: 75px $padding5; }
+    @include desktop { padding: 100px 13%; }
   }
 
   &__subwrapper {
-    @include textCenter;
-    
+    text-align: center;
     @include tablet {
       @include flexCenter;
       justify-content: space-evenly;
@@ -108,27 +104,27 @@ export default {
   &__biowrapper {
     max-width: 550px;
     margin: auto;
-
-    @include tablet {
-      width: 50%;
-    }
+    @include tablet { width: 50%; }
   }
 
   &__image {
-    @include headshot;
+    width: 50%;
+    max-width: 230px;
   }
 
   &__bio {
-    @include bio;
+    color: $stockWhite;
+    font-size: $font16;
+    margin: 20px auto;
   }
 
   &__resume {
     @include button;
-    font-size: $font20;
     display: inline-block;
-
     &:hover {
-      @include invertToWhite;
+      border-color: $stockWhite;
+      background: $stockWhite;
+      color: $stockBlack;
     }
   }
 }

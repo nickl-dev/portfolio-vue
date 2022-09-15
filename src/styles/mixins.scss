@@ -1,22 +1,5 @@
 @import "./variables.scss";
-@import "./text.scss";
-
-@mixin tablet {
-  @media (min-width: $tabletBreakpoint) {
-    @content;
-  }
-}
-
-@mixin desktop {
-  @media (min-width: $desktopBreakpoint) {
-    @content;
-  }
-}
-
-@mixin headshot {
-  width: 50%;
-  max-width: 230px;
-}
+@import "./breakpoints.scss";
 
 @mixin flexCenter {
   display: flex;
@@ -24,13 +7,9 @@
   align-items: center;
 }
 
-@mixin flexColumn {
-  flex-direction: column;
-}
+@mixin flexColumn { flex-direction: column; }
 
-@mixin padding5 {
-  padding: 0 $padding5;
-}
+@mixin padding5 { padding: 0 $padding5; }
 
 @mixin iconLink {
   color: $stockBlack;
@@ -42,7 +21,7 @@
   color: $stockWhite;
   border: 1px solid $stockWhite;
   transition: $transition;
-  font-size: $font20;
+  font-size: $font17;
 }
 
 @mixin link {
@@ -53,7 +32,6 @@
 
 @mixin demoLink {
   @include button;
-  font-size: 16px;
   color: $stockBlack;
   border: 1px solid $stockBlack;
 }
@@ -61,20 +39,6 @@
 @mixin codeLink {
   @include link;
   color: $stockBlack;
-
-  &:hover {
-    margin-left: 3px;
-  }
-}
-
-@mixin invertToWhite {
-  border-color: $stockWhite;
-  background: $stockWhite;
-  color: $stockBlack;
-}
-
-@mixin invertToBlack {
-  border-color: $stockBlack;
-  background: $stockBlack;
-  color: $stockWhite;
+  font-size: $font17;
+  &:hover { margin-left: 3px; }
 }

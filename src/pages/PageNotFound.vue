@@ -22,9 +22,7 @@ div {
   align-items: center;
 }
 
-h1 {
-  font-size: 50px;
-}
+h1 { font-size: 50px; }
 
 p {
   margin-top: 20px;
