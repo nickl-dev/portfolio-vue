@@ -20,7 +20,6 @@ import GreetingsScreenshot from "@/assets/project-screenshots/greetings-screensh
 import CleanfolioScreenshot from "@/assets/project-screenshots/cleanfolio-screenshot.png"
 import MyGradientScreenshot from "@/assets/project-screenshots/mygradient-screenshot.png"
 import CanadaDrivesScreenshot from "@/assets/project-screenshots/canadadrives-homepage-2.0-screenshot.png"
-import AutoCreditDealsScreenshot from "@/assets/project-screenshots/autocreditdeals-site-2.0-screenshot.png"
 
 export default {
   name: "MyWork",
@@ -36,13 +35,6 @@ export default {
           techStack: "Nuxt, JavaScript, Tailwind, SASS",
           image: CanadaDrivesScreenshot,
           demo: "https://www.canadadrives.ca/"
-        },
-        {
-          title: "Auto Credit Deals - Website 2.0",
-          description: "Auto Credit Deals static website 2.0",
-          techStack: "Nuxt, JavaScript, Tailwind, SASS",
-          image: AutoCreditDealsScreenshot,
-          demo: "https://autocreditdeals.ca/"
         },
         {
           title: "Cleanfolio",
