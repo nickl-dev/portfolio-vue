@@ -17,14 +17,8 @@
         />
         <div class="about__biowrapper">
           <p class="about__bio">
-            I’m a collaborative Software Developer experienced in building
-            clean, responsive and accessible web applications. Comfortable in an
-            agile environment, working closely with Product Managers/Owners,
-            Designers, and QA to design and develop high-quality, pixel-perfect
-            solutions, as well as translate user and business needs into clean,
-            efficient, reusable code. I’m most passionate about learning,
-            problem solving and clean design. Always seeking the opportunity to
-            level up and work with great people on great projects.
+            I’m a collaborative Software Developer experienced in building clean, responsive, performant web applications.
+            Comfortable in an agile environment, working closely with Product Managers/Owners, Designers, Developers/Engineers, and QA to design and develop impactful solutions, as well as translate user and business needs into clean, efficient, reusable code. I’m most passionate about learning, problem-solving, clean design, and I love to take ownership of the entire development process from start to finish to deliver my best work.
           </p>
           <a 
             :href="resume" 
