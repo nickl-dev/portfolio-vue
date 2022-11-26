@@ -1,5 +1,5 @@
-@import "./variables.scss";
-@import "./breakpoints.scss";
+@import './variables.scss';
+@import './breakpoints.scss';
 
 @mixin flexCenter {
   display: flex;
@@ -7,9 +7,13 @@
   align-items: center;
 }
 
-@mixin flexColumn { flex-direction: column; }
+@mixin flexColumn {
+  flex-direction: column;
+}
 
-@mixin padding5 { padding: 0 $padding5; }
+@mixin padding5 {
+  padding: 0 $padding5;
+}
 
 @mixin iconLink {
   color: $stockBlack;
@@ -40,5 +44,7 @@
   @include link;
   color: $stockBlack;
   font-size: $font17;
-  &:hover { margin-left: 3px; }
+  &:hover {
+    margin-left: 3px;
+  }
 }

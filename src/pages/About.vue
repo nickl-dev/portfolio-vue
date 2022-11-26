@@ -7,52 +7,43 @@
       </div>
     </header>
 
-    <section class="about__wrapper">
-      <div class="about__subwrapper">
-        <img
-          :src="portrait"
-          alt="Portrait of Nick Lal"
-          class="about__image"
-          loading="lazy"
-        />
-        <div class="about__biowrapper">
-          <p class="about__bio">
-            I’m a collaborative Software Developer experienced in building clean, responsive, performant web applications.
-            Comfortable in an agile environment, working closely with Product Managers/Owners, Designers, Developers/Engineers, and QA to design and develop impactful solutions, as well as translate user and business needs into clean, efficient, reusable code. I’m most passionate about learning, problem-solving, clean design, and I love to take ownership of the entire development process from start to finish to deliver my best work.
-          </p>
-          <a 
-            :href="resume" 
-            class="about__resume" 
-            target="_blank"
-          > 
-            Resume 
-          </a>
-        </div>
-      </div>
+    <section class="about__bio-wrapper">
+      <p class="about__bio">
+        I’m a collaborative Software Developer experienced in building clean,
+        responsive, performant web applications. Comfortable in an agile
+        environment, working closely with Product Managers/Owners, Designers,
+        Developers/Engineers, and QA to design and develop impactful solutions,
+        as well as translate user and business needs into clean, efficient,
+        reusable code. I’m most passionate about learning, problem-solving,
+        clean design, and I love to take ownership of the entire development
+        process from start to finish to deliver my best work.
+      </p>
+      <a :href="resume" class="about__resume" target="_blank"> Resume </a>
     </section>
   </div>
 </template>
 
 <script>
-import portrait from "@/assets/nick-lal-portrait.jpg"
-
 export default {
-  name: "About",
-  data () {
+  name: 'About',
+  data() {
     return {
-      portrait: portrait,
-      resume: "../nick-lal-resume.pdf"
-    }
+      resume: '../nick-lal-resume.pdf'
+    };
   }
-}
+};
 </script>
 
 <style lang="scss">
-@import "@/styles/global.scss";
+@import '@/styles/global.scss';
 
 @keyframes type {
-  from { width: 0; }
-  to { width: 100%; }
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 .about {
@@ -64,8 +55,12 @@ export default {
 
   &__name {
     font-size: 40px;
-    @include tablet { font-size: 70px; }
-    @include desktop { font-size: 100px; }
+    @include tablet {
+      font-size: 70px;
+    }
+    @include desktop {
+      font-size: 100px;
+    }
   }
 
   &__occupation {
@@ -75,41 +70,29 @@ export default {
     font-size: $font20;
     font-weight: 600;
     margin: 20px auto 0 auto;
-    @include tablet { font-size: 25px; }
-    &-wrapper { display: inline-block; }
-  }
-
-  &__wrapper {
-    background: $stockBlack;
-    padding: 50px $padding5;
-    margin-top: 43vh;
-    @include tablet { padding: 75px $padding5; }
-    @include desktop { padding: 100px 13%; }
-  }
-
-  &__subwrapper {
-    text-align: center;
     @include tablet {
-      @include flexCenter;
-      justify-content: space-evenly;
+      font-size: 25px;
+    }
+    &-wrapper {
+      display: inline-block;
     }
   }
 
-  &__biowrapper {
-    max-width: 550px;
-    margin: auto;
-    @include tablet { width: 50%; }
-  }
-
-  &__image {
-    width: 50%;
-    max-width: 230px;
+  &__bio-wrapper {
+    background: $stockBlack;
+    padding: 50px $padding5;
+    margin-top: 45vh;
+    text-align: center;
+    @include tablet {
+      padding: 75px $padding5;
+    }
   }
 
   &__bio {
+    max-width: 600px;
     color: $stockWhite;
     font-size: $font16;
-    margin: 20px auto;
+    margin: 20px auto 30px auto;
   }
 
   &__resume {
