@@ -1,4 +1,4 @@
-## My portfolio site
+## My Portfolio Site
 
 <a href="https://www.nicklal.dev">
   <img 
@@ -14,4 +14,4 @@ My portfolio site where I share my development experience and showcase work that
 
 Click [here](https://www.nicklal.dev) to view my portfolio.
 
-Built with ```Vue, JavaScript, SASS```
+Developed with `JavaScript, Vue, SASS`
