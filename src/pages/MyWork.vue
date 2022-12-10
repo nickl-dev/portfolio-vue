@@ -32,7 +32,7 @@ export default {
         {
           title: 'Canada Drives - Homepage 2.0',
           description: 'Canada Drives static website home page 2.0',
-          techStack: 'JavaScript, Nuxt, Tailwind, SASS',
+          techStack: 'JavaScript, Nuxt, Tailwind, SCSS',
           image: CanadaDrivesScreenshot,
           demo: 'https://www.canadadrives.ca/'
         },
@@ -40,7 +40,7 @@ export default {
           title: 'Cleanfolio',
           description:
             'Clean and simple portfolio site template for developers',
-          techStack: 'JavaScript, Vue, SASS',
+          techStack: 'JavaScript, Vue, SCSS',
           image: CleanfolioScreenshot,
           demo: 'https://nickl-dev-cleanfolio.netlify.app/',
           code: 'https://github.com/nickl-dev/cleanfolio-vue'
@@ -57,7 +57,7 @@ export default {
         {
           title: 'MyGradient',
           description: 'Dual color gradient generator',
-          techStack: 'HTML, SASS, JavaScript',
+          techStack: 'HTML, SCSS, JavaScript',
           image: MyGradientScreenshot,
           demo: 'https://nickl-dev-mygradient.netlify.app/',
           code: 'https://github.com/nickl-dev/mygradient'
